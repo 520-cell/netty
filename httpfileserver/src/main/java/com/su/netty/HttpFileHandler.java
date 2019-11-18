@@ -93,5 +93,6 @@ public class HttpFileHandler extends SimpleChannelInboundHandler<FullHttpRequest
         }
         ctx.writeAndFlush(response);
         ctx.close();
+        System.out.println("关闭连接");
     }
 }
